@@ -21,22 +21,22 @@ function compilaSass() {
 }
 
 function pluginsCSS() {
-  return gulp.src('css/lib/*.css')
-  .pipe(concat('plugins.css'))
-  .pipe(gulp.dest('css/'))
-  .pipe(browserSync.stream())
+    return gulp.src('css/lib/*.css')
+    .pipe(concat('plugins.css'))
+    .pipe(gulp.dest('css/'))
+    .pipe(browserSync.stream())
 }
 
 // compila o javascript
 function gulpJs() {
-  return gulp.src('js/scripts/*.js')
-  .pipe(concat('all.js'))
-  .pipe(babel({
-      presets: ['@babel/env']
-  }))
-  .pipe(uglify())
-  .pipe(gulp.dest('js/'))
-  .pipe(browserSync.stream());
+    return gulp.src('js/scripts/*.js')
+    .pipe(concat('all.js'))
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
+    .pipe(uglify())
+    .pipe(gulp.dest('js/'))
+    .pipe(browserSync.stream());
 }
 
 function pluginsJs() {
@@ -58,11 +58,11 @@ function browser() {
 
 // observa as alterações em scss e html
 function watch() {
-  gulp.watch('scss/*.scss', compilaSass);
-  gulp.watch('css/lib/*.css', pluginsCSS);
-  gulp.watch('*.html').on('change', browserSync.reload);
-  gulp.watch('js/scripts/*js', gulpJs);
-  gulp.watch('js/lib/*.js', pluginsJs);
+    gulp.watch('scss/*.scss', compilaSass);
+    gulp.watch('css/lib/*.css', pluginsCSS);
+    gulp.watch('*.html').on('change', browserSync.reload);
+    gulp.watch('js/scripts/*js', gulpJs);
+    gulp.watch('js/lib/*.js', pluginsJs);
 }
 
 // Chamadas de tarefas
