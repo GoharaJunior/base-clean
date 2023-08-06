@@ -1,16 +1,16 @@
 <h1 align="center">
     <br>
-        <img src=".github/maeztra-title.png" alt="Logo King Host">
+        <img src=".github/logo-clean-base.png">
     <br>
 </h1>
-<p align="center"> Visualize o projeto:
+<!-- <p align="center"> Visualize o projeto:
     https://goharajunior.github.io/maeztra-store/
-</p>
+</p> -->
 
-<img src=".github/demo.gif" alt="Demonstração do Projeto" height="350">&nbsp;&nbsp;
+<!-- <img src=".github/demo.gif" alt="Demonstração do Projeto" height="350">&nbsp;&nbsp;
 <img src=".github/demo-mobile.gif" alt="Demonstração do Projeto" height="350">
 <br>
-<br>
+<br> -->
 
 ## ⚡ Tecnologias
 
